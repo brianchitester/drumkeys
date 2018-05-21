@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>DRUMKEYS</title>
+  <meta name="description" content="online drum pad">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <h1>💵🍍🔑DRUMKEYS🔑🍍💵</h1>
+
+  <div class="editor">
+    <form onsubmit="updatePad()">
+    <label for="audio">Audio</label>
+    <input type="text" name="audio source" id="audio" value="http://www.website.com/audio-source.mp3">
+    <label for="text">Text</label>
+    <input type="text" name="pad text" id="text" value="">
+    <label for="color">Color</label>
+    <input type="text" name="pad color" id="color" value="black">
+    <input type="submit" value="Save">
+  </div>
+
+  <div>
+    <div class="row qwerty">
+      <div class="box Q" data-code="82">Q</div>
+      <div class="box W" data-code="84">W</div>
+      <div class="box E" data-code="89">E</div>
+      <div class="box R" data-code="85">R</div>
+      <div class="box T" data-code="85">T</div>
+      <div class="box Y" data-code="85">Y</div>
+      <div class="box U" data-code="85">U</div>
+      <div class="box I" data-code="85">I</div>
+      <div class="box O" data-code="85">O</div>
+      <div class="box P" data-code="85">P</div>
+    </div>
+    <div class="row asdfg">
+      <div class="box A" data-code="82">A</div>
+      <div class="box S" data-code="84">S</div>
+      <div class="box D" data-code="89">D</div>
+      <div class="box F" data-code="85">F</div>
+      <div class="box G" data-code="85">G</div>
+      <div class="box H" data-code="85">H</div>
+      <div class="box J" data-code="85">J</div>
+      <div class="box K" data-code="85">K</div>
+      <div class="box L" data-code="85">L</div>
+    </div>
+    <div class="row zxcvb">
+      <div class="box Z" data-code="82">Z</div>
+      <div class="box X" data-code="84">X</div>
+      <div class="box C" data-code="89">C</div>
+      <div class="box V" data-code="85">V</div>
+      <div class="box B" data-code="85">B</div>
+      <div class="box N" data-code="85">N</div>
+      <div class="box M" data-code="85">M</div>
+    </div>
+  </div>
+</body>
